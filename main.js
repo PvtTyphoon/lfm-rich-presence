@@ -23,7 +23,7 @@ function prompt(question) {
 		stdin.on("error", (err) => reject(err));
 	});
 }
-const apiKey = "615322f0047e12aedbc610d9d71f7430";
+const apiKey = "YOUR-API-KEY"; // If you wish to compile this yourself
 
 rp.on("ready", async () => {
 	const username = await prompt(
