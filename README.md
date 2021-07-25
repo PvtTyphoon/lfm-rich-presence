@@ -1,7 +1,6 @@
-![lfm](https://i.imgur.com/7wOHUnx.png)
+![First Example](https://i.imgur.com/yT17xpS.png)
 # Last.fm Discord Rich Presence
-A lightweight Discord rich presence application that fetches information from your last.fm profile. 
-Your status is updated every 30 seconds and includes information such as your currently playing track, the album it is from, the artist, your playcount for the track, your total scrobbles, a button with a link to your last.fm profile, and when you last scrobbled (if you are currently not listening to music).
+Your status is automatically updated every 30 seconds and includes information such as your currently playing track, the album it is from, the artist, your playcount for the track, your total scrobbles, a button with a link to your last.fm profile, and when you last scrobbled (if you are currently not listening to music).
 
 Example status:
 ![Example](https://i.imgur.com/GhWfiUu.gif)
@@ -14,11 +13,11 @@ Upon running the binary you will be asked for your last.fm username, and a rpc c
 You can clone this repository and modify/run this program as you wish, you will need npm and nodejs installed. 
 With apt
 ```
-apt install nodejs npm
+~$ apt install nodejs npm
 ```
 With pacman
 ```
-pacman -S nodejs npm
+~$ pacman -S nodejs npm
 ```
 This should work on any hardware and operating system that is younger than my grandmother Here is a semi-tutorial:
 ```
