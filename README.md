@@ -7,7 +7,7 @@ Example status:
 ![Example]()
 
 ## Installation and usage
-You can download a pre-compiled binary for macOS and linux, as well as an executable for Windows, on the releases page [here.]()
+You can download a pre-compiled binary for macOS and linux, as well as an executable for Windows, on the releases page [here.](https://github.com/PvtTyphoon/lfm-rich-presence/releases)
 Upon running the binary you will be asked for your last.fm username, and a rpc call to the Discord application will be made to establish your rich presence.
 
 ### Run as a node.js app
