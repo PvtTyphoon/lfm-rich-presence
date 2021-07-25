@@ -13,11 +13,11 @@ Upon running the binary you will be asked for your last.fm username, and a rpc c
 You can clone this repository and modify/run this program as you wish, you will need npm and nodejs installed. 
 With apt
 ```
-~$ apt install nodejs npm
+apt install nodejs npm
 ```
 With pacman
 ```
-~$ pacman -S nodejs npm
+pacman -S nodejs npm
 ```
 This should work on any hardware and operating system that is younger than my grandmother Here is a semi-tutorial:
 ```
