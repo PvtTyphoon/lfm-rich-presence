@@ -46,7 +46,7 @@ rp.on("ready", async () => {
 			buttons: [
 				{
 					label: `${formatNumber(data.scrobbles)} total scrobbles.`,
-					url: `https://www.last.fm/user/${data.user}`,
+					url: `https://www.last.fm/user/${username}`,
 				},
 			],
 		});
