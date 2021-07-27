@@ -3,6 +3,7 @@
 Your status is automatically updated every 30 seconds and includes information such as your currently playing track, the album it is from, the artist, your playcount for the track, your total scrobbles, a button with a link to your last.fm profile, and when you last scrobbled (if you are currently not listening to music).
 You can minimise the window to run in the background and then bring it up again using your system tray.
 The UI is minimalistic because I'm not good at designing UIs.
+
 ![UI](https://i.imgur.com/AcEo3gp.png)
 
 Example status:
