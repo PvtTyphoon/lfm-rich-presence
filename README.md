@@ -6,6 +6,7 @@ The UI is minimalistic because I'm not good at designing UIs.
 ![UI](https://i.imgur.com/AcEo3gp.png)
 
 Example status:
+
 ![Example](https://i.imgur.com/GhWfiUu.gif)
 
 ## Installation and usage
