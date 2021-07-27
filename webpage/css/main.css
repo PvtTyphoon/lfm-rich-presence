@@ -1,0 +1,44 @@
+.mainBody {
+  background-color: #36393f;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.titlebar {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#console, 
+#updates {
+  border: 3px solid white;
+  width: 45%;
+  height: 365px;
+  overflow: auto;
+  display: inline-block;
+  background-color: black;
+  color: white;
+}
+
+#console {
+  float: left;
+  font-size: 15px;
+}
+
+#updates {
+  float: right;
+  font-size: 15px;
+}
+.err {
+  color: rgb(255, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.succ {
+  color: rgb(0, 255, 00);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  height: 25px;
+  width: auto;
+}

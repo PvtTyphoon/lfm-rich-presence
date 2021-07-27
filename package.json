@@ -2,22 +2,11 @@
 	"name": "lastfm-discord-rp",
 	"description": "A lightweight Discord rich presence that pulls data from your last.fm profile.",
 	"homepage": "https://github.com/PvtTyphoon/lfm-rich-presence/",
-	"version": "1.0.1",
-	"main": "main.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/PvtTyphoon/lfm-rich-presence/"
-	},
-	"scripts": {
-		"start": "node main.js"
-	},
-	"license": "Apache-2.0",
-	"licenses": [
-		{
-			"type": "Apache-2.0",
-			"url": "http://www.apache.org/licenses/LICENSE-2.0"
-		}
-	],
+	"version": "2.0.0",
+  "main": "index.js",
+  "build": {
+    "appId": "com.liamsnotabot.lfm"
+  },
 	"keywords": [
 		"last.fm",
 		"discord",
@@ -25,10 +14,25 @@
 		"discord rp",
 		"last.fm rich presence"
 	],
-	"dependencies": {
-		"discord-rpc": "4.0.1",
-		"pretty-ms": "7.0.1",
-		"request": "^2.88.2",
-		"request-promise": "4.2.4"
-	}
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Liam",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "electron": "13.1.7",
+    "electron-builder": "22.11.7",
+    "node-gyp": "8.1.0"
+  },
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.7",
+    "discord-rpc": "4.0.1",
+    "electron-squirrel-startup": "1.0.0",
+    "electron-store": "^8.0.0",
+    "pretty-ms": "7.0.1",
+    "request": "2.88.2",
+    "request-promise": "4.2.6"
+  }
 }
