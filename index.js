@@ -9,15 +9,15 @@ function initWindow() {
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
-      enableRemoteModule: true
+      enableRemoteModule: true,
     },
-    autoHideMenuBar: true
+    autoHideMenuBar: true,
   });
   mainView.loadFile("webpage/index.html");
   mainView.setResizable(false);
-  mainView.on("closed", function() {
+  mainView.on("closed", function () {
     mainView = null;
-  })
+  });
 }
 
 app.on("ready", initWindow);
