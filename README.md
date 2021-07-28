@@ -6,20 +6,22 @@ Your status is automatically updated every 30 seconds and includes information s
 You can minimise the window to run in the background and then bring it up again using your system tray.
 The UI is minimalistic because I'm not good at designing UIs.
 
-![UI](https://i.imgur.com/AcEo3gp.png)
-
 Example status:
 
 ![Example](https://i.imgur.com/GhWfiUu.gif)
 
+![UI](https://i.imgur.com/AcEo3gp.png)
+
+
 ## Installation and usage
 
 You can download a pre-compiled binary for macOS and linux, these are basic node scripts, as well as an executable for Windows with a full fledged GUI, on the releases page [here.](https://github.com/PvtTyphoon/lfm-rich-presence/releases)
+This app is only supported for Windows at the moment because I need a $100 license to build for macOS and I do not think compiling for Linux is useful, I use arch (btw) and feel like running a nodejs binary is the simplest way. 
 Upon running the binary you will be asked for your last.fm username, and a rpc call to the Discord application will be made to establish your rich presence.
 
 ### Run as a node.js app
 
-You can clone this repository and modify/run this program as you wish, you will need npm and nodejs installed.
+You can clone this repository and modify/run this program as you wish, you will need npm and nodejs installed. Make sure to install the dev dependencies globally.
 With apt
 
 ```
