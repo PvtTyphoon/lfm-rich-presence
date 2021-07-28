@@ -5,7 +5,7 @@ function initWindow() {
     height: 600,
     width: 800,
     icon: "build/icon.png",
-    frame: false,
+    frame: true,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
