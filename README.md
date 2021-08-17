@@ -8,7 +8,7 @@ The UI is minimalistic because I'm not good at designing UIs.
 
 Example status:
 
-![Example](https://i.imgur.com/GhWfiUu.gif)
+![Example](https://i.imgur.com/J35geUW.gif)
 
 ![UI](https://i.imgur.com/AcEo3gp.png)
 
