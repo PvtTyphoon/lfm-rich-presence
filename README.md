@@ -1,5 +1,7 @@
 ![First Example](https://i.imgur.com/yT17xpS.png)
+
 # Quick Notice
+
 The windows binary in this release is bloated, I am aware of this. Essentially what happened here was that the program was a quick script built to run cross platform, because a friend wanted a UI, I threw it into electron, packaging this obviously was a waste of space.
 I'll properly rewrite the UI in something that isnt a scripting language lol, as soon as I get the motivation to actually do anything with my life, sorry for the laziness.
 
