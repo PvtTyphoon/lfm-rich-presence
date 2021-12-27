@@ -1,4 +1,4 @@
-const { app, BrowserWindow, Menu, Tray  } = require("electron");
+const { app, BrowserWindow, Menu, Tray } = require("electron");
 var tray = null;
 
 function initWindow() {
@@ -15,42 +15,42 @@ function initWindow() {
   mainView.loadFile("src/index.html");
   mainView.setResizable(false);
 
-  mainView.on('minimize',function(event){
+  mainView.on("minimize", function (event) {
     event.preventDefault();
     mainView.hide();
-});
-  tray = new Tray("./assets/icon.png")
+  });
+  tray = new Tray("./assets/icon.png");
   const contextMenu = Menu.buildFromTemplate([
     {
-        label: "Last.fm Rich Presence",
-        enabled: false,
+      label: "Last.fm Rich Presence",
+      enabled: false,
+    },
+    {
+      type: "separator",
+    },
+    {
+      label: "Open App",
+      click: function () {
+        mainView.show();
       },
-      {
-        type: "separator",
+    },
+    {
+      label: "Quit",
+      click: function () {
+        app.quit();
       },
-      {
-        label: "Open App",
-        click: function () {
-          mainView.show();
-        },
-      },
-      {
-        label: "Quit",
-        click: function () {
-          app.quit();
-        },
-      },
-    ])
-  tray.setToolTip('Last.fm Discord Rich Presence')
-  tray.setContextMenu(contextMenu)
+    },
+  ]);
+  tray.setToolTip("Last.fm Discord Rich Presence");
+  tray.setContextMenu(contextMenu);
 }
 
 app.whenReady().then(() => {
-    initWindow()
-    app.on('activate', () => {
-      if (BrowserWindow.getAllWindows().length === 0) initWindow()
-    })
-  })
-  app.on('window-all-closed', () => {
-    if (process.platform !== 'darwin') app.quit()
-  })
+  initWindow();
+  app.on("activate", () => {
+    if (BrowserWindow.getAllWindows().length === 0) initWindow();
+  });
+});
+app.on("window-all-closed", () => {
+  if (process.platform !== "darwin") app.quit();
+});
