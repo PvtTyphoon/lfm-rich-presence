@@ -1,38 +1,74 @@
 {
-	"name": "lastfm-discord-rp",
-	"description": "A lightweight Discord rich presence that pulls data from your last.fm profile.",
-	"homepage": "https://github.com/PvtTyphoon/lfm-rich-presence/",
-	"version": "2.0.0",
+  "name": "lfm-discord-rp",
+  "version": "3.0.0",
+  "description": "A lightweight Discord rich presence that pulls data from your last.fm profile.",
+  "homepage": "https://github.com/PvtTyphoon/lfm-rich-presence/",
   "main": "index.js",
   "build": {
     "appId": "com.liamsnotabot.lfm"
   },
-	"keywords": [
-		"last.fm",
-		"discord",
-		"discord rich presence",
-		"discord rp",
-		"last.fm rich presence"
-	],
+  "keywords": [
+    "last.fm",
+    "discord",
+    "discord rich presence",
+    "discord rp",
+    "last.fm rich presence"
+  ],
   "scripts": {
-    "start": "electron .",
+    "start": "electron-forge start",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "make-mac": "npx @electron-forge/cli make --platform darwin"
   },
   "author": "Liam",
   "license": "Apache-2.0",
-  "devDependencies": {
-    "electron": "13.1.7",
-    "electron-builder": "22.11.7",
-    "node-gyp": "8.1.0"
-  },
   "dependencies": {
-    "custom-electron-titlebar": "^3.2.7",
     "discord-rpc": "4.0.1",
-    "electron-squirrel-startup": "1.0.0",
-    "electron-store": "^8.0.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-store": "^8.0.1",
     "pretty-ms": "7.0.1",
     "request": "2.88.2",
     "request-promise": "4.2.6"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.61",
+    "@electron-forge/maker-deb": "^6.0.0-beta.61",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.61",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
+    "@electron-forge/maker-zip": "^6.0.0-beta.61",
+    "electron": "^16.0.5"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "lfm_discord_rp",
+            "icon": "assets/icon.ico",
+            "setupIcon": "assets/icon.ico"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ],
+          "icon": "assets/icon.icns",
+          "setupIcon": "assets/icon.icns"
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }
