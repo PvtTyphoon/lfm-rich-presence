@@ -22,25 +22,28 @@ Upon running the binary you will be asked for your last.fm username, and a rpc c
 
 If you want to run this as a simple node.js script, you can do so by downloading the script [Here](https://gist.githubusercontent.com/PvtTyphoon/ec8316e655992d37fdef1479803fb01e/raw/c248aff479e3da7139335c56c6f9c4fd97f029b7/main.js).
 
-
 CLI instructions.
 First download the script into the folder you want to save it in. This example will assume you're using `wget`.
+
 ```bash
 wget https://gist.githubusercontent.com/PvtTyphoon/ec8316e655992d37fdef1479803fb01e/raw/c248aff479e3da7139335c56c6f9c4fd97f029b7/main.js
 ```
 
 Then install dependencies, you will need node.js and nom installed.
+
 ```bash
 npm i discord-rpc request-promise pretty-ms
 ```
 
 To run the script, use `node`.
-```bash 
+
+```bash
 node main.js
 ```
 
 This will prompt you for your username, you can also edit the script itself to include your username.
-```diff 
+
+```diff
 -   const username = await prompt(
 -    "Type out your last.fm username and then hit enter: "
 -  );
@@ -48,6 +51,7 @@ This will prompt you for your username, you can also edit the script itself to i
 ```
 
 You can then set this script to run on startup.
+
 ## Contribution and issues
 
 You can fork and create pull requests to this repository and I'll review them eventually. This is however a quick and dirty implementation I have not yet spent a lot of time on. Updates will come eventually.
