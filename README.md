@@ -29,7 +29,7 @@ First download the script into the folder you want to save it in. This example w
 wget https://gist.githubusercontent.com/PvtTyphoon/ec8316e655992d37fdef1479803fb01e/raw/c248aff479e3da7139335c56c6f9c4fd97f029b7/main.js
 ```
 
-Then install dependencies, you will need node.js and nom installed.
+Then install dependencies, you will need node.js and npm installed.
 
 ```bash
 npm i discord-rpc request-promise pretty-ms
