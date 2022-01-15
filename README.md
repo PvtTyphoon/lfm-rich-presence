@@ -18,7 +18,7 @@ You can download a pre-compiled binary for macOS and linux, these are basic node
 This app is only supported for Windows at the moment because I need a $100 license to build for macOS and I do not think compiling for Linux is useful, I use arch (btw) and feel like running a nodejs binary is the simplest way.
 Upon running the binary you will be asked for your last.fm username, and a rpc call to the Discord application will be made to establish your rich presence.
 
-## Running as a node.js projet
+## Running as a node.js project
 
 If you want to run this as a simple node.js script, you can do so by downloading the script [Here](https://gist.githubusercontent.com/PvtTyphoon/ec8316e655992d37fdef1479803fb01e/raw/c248aff479e3da7139335c56c6f9c4fd97f029b7/main.js).
 
