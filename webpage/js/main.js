@@ -122,7 +122,7 @@ document.getElementById("run").addEventListener("click", () => {
       artist: lastTrack.recenttracks.track[0].artist["#text"],
       album: lastTrack.recenttracks.track[0].album["#text"],
       trackName: lastTrack.recenttracks.track[0].name,
-      playcount: rData.track.userplaycount ? rData.track.userplaycount : "0",
+      playcount: rData.track?.userplaycount ? rData.track?.userplaycount : "0",
       scrobbles: lastTrack.recenttracks["@attr"].total,
       whenScrobbled: lastTrack.recenttracks.track[0]["@attr"],
       scrobbleStatus: !lastTrack.recenttracks.track[0]["@attr"]
